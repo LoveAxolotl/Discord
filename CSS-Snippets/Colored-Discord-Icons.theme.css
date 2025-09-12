@@ -1,0 +1,320 @@
+/*
+ * Theme Name:  Colored-Discord-icons.theme.css
+ * Description: Discord Icons related css styling.
+ *
+ * Author:      love_axelotl
+ * Discord ID:  751063943065370644
+ *
+ * Contributer: acheronx0577
+ * Discord ID:  1285431830031503432
+*/
+
+/* Pre-defined variables, easy to change */
+:root {
+  /* Icon urls */
+  --discord-home-icon: url("https://i.imgur.com/Nmh5xkx.jpg");    /* Blush icon */
+  --nitro-badge-icon: url("https://i.imgur.com/b1yGcCj.jpg");     /* Animated icon */
+
+  /* Colors */
+  --red: rgb(255, 0, 0);
+  --green: rgb(0, 255, 0);
+  --light-blue: rgb(0, 255, 255);
+  --blue: rgb(0, 0, 255);
+  --yellow: rgb(255, 255, 0);
+  --pink: rgb(255, 0, 255);
+  --orange: rgb(255, 166, 0);
+  --white: rgb(255, 255, 255);
+  --orange-brown: rgb(192, 110, 20);
+  --silver: rgb(145, 140, 140);
+  --brown: rgb(118, 50, 1);
+  --purple: rgb(68, 5, 68);
+}
+
+/* Color discord's colorless icons in dm's (e.g. Friends, Message Requests, etc) */
+.content__99f8c {
+ /* Friends icon - config */
+ a[href="/channels/@me"] .linkButtonIcon__972a0 path {
+   color: var(--yellow);
+ } 
+
+ /* Message requests icon - config */
+ a[href="/message-requests"] .linkButtonIcon__972a0 path{
+   &:nth-child(1) {
+    color: var(--orange);
+   }
+   &:nth-child(2) {
+    color: var(--yellow);
+   }
+ }
+
+ /* Nitro icon - config */
+ a[href="/store"] .linkButtonIcon__972a0 {
+    path {
+      display: none;
+    }
+    background-color: transparent;
+    background: var(--nitro-badge-icon) center/cover;
+    border-radius: 5px;
+  }
+
+ /* Shop icon - config*/
+ a[href="/shop"] .linkButtonIcon__972a0 path {
+  &:nth-child(1) {
+    color: var(--red);
+  }
+  &:nth-child(2) {
+    color: var(--white);
+  }
+ }
+
+ /* Memberlist activity icons (Server member list) */
+
+ /* Settings icon - config */
+ .header__095fe path {
+  fill: var(--blue);
+ }
+
+ /* Activity pop-out icon - config */
+ .toggleExpandIcon__095fe > path {
+  fill: var(--blue);
+ }
+}
+
+/* Color per-user related icons (Dm's) */
+.toolbar__9293f {
+  /* Start voice call icon - config */
+  [aria-label="Start Voice Call"] path {
+    color: var(--green);
+  }
+  
+  /* Start video call icon - config */
+  [aria-label="Start Video Call"] path {
+    color: var(--light-blue);
+  }
+  
+  /* Pinned messages icon - config */
+  [aria-label="Pinned Messages"] path {
+    color: var(--purple);
+  }
+
+  /* add friends to dm icon - config */
+  [aria-label="Add Friends to DM"] {
+    /* The person icon */
+    path:nth-child(1) {
+      color: var(--yellow);
+    }
+
+    /* The plus icon */
+    path:nth-child(2) {
+      color: var(--green);
+    }
+  }
+  
+  /* Show User Profile icon - when profile is hidden - config */
+  [aria-label="Show User Profile"] path {
+    /* The person icon */
+    &:nth-child(1) {
+      color: var(--blue);
+      filter: drop-shadow(0 0 1px rgba(139, 159, 255, 0.7));
+    }
+  
+    /* The status icon */
+    &:nth-child(2) {
+      color: var(--pink);
+      filter: drop-shadow(0 0 1.5px rgba(147, 112, 219, 0.8));
+    }
+  }
+
+  /* Hide User Profile icon - when profile is visible - config */
+  [aria-label="Hide User Profile"] path {
+    /* The person icon */
+    &:nth-child(1) {
+      color: var(--pink)
+    }
+
+    /* The status icon */
+    &:nth-child(2) {
+      color: var(--blue)
+    }
+  }
+
+  /* Searchbar icon "Search" (Dm's) */
+  [aria-label="Search"] path {
+    color: var(--blue);
+  }
+
+  /* Searchbar icon "Clear" (Dm's) */
+  [aria-label="Clear"] path {
+    color: var(--blue);
+  }
+
+  /* Searchbar icon "Learn more" (In pop-out) - config */
+  /* NOTE: Needs change  */
+  [aria-label="Learn More"] {
+    circle {
+      fill: currentColor;
+      color: var(--blue);
+    }
+
+    path {
+      fill: currentColor;
+      color: var(--white);
+    }
+  }
+
+  /* Channel related icons (In server channels) - config */
+
+  /* Threads icon - config */
+  [aria-label="Threads"] path {
+    color: var(--light-blue);
+  }
+
+  /* Notification settings icon - config */
+  [aria-label="Notification Settings"] path {
+    color: var(--yellow);
+  }
+
+  /* Pinned messages icon - Skipping - Already defined - Line 92 */
+
+  /* Hide & Show member list icon - config */
+  [aria-label="Hide Member List"] path {
+    color: var(--red);
+  }
+
+  [aria-label="Show Member List"] path {
+    color: var(--green);
+  }
+}
+
+/* Color icons in the top bar (e.g. minimalise, maximise, etc) */
+.bar_c38106 {
+  /* Discord icon in the top bar next to the server name / direct messages - config */
+  [aria-label="Open Quick Switcher"] {
+    path {
+      fill: currentColor;
+      color: var(--blue);
+    }
+  }
+
+  /* Inbox icon - config */
+  [aria-label="Inbox"] path {
+    color: var(--blue);
+  }
+
+  /* Help icon - config */
+  [aria-label="Help"] {
+    circle {
+      fill: currentColor;
+      color: var(--white);
+    }
+
+    path {
+      color: var(--blue);
+    }
+  }
+
+  /* Vencord toolbox icon - config */
+  [aria-label="Vencord Toolbox"] path {
+    color: var(--orange-brown);
+  }
+
+  /* Update ready! icon - config */
+  [aria-label="Update Ready!"] {
+    /* Class overrides path color in this icon */
+    .updateIconForeground__49676 {
+      fill: var(--green);
+    }
+  }
+
+  /* Minimise icon - config */
+  [aria-label="Minimise"] rect {
+    color: var(--blue);
+  }
+
+  /* Maximise icon - config */
+  [aria-label="Maximise"] rect {
+    stroke: var(--blue);
+  }
+
+  /* Close icon - config */
+  [aria-label="Close"] polygon {
+    color: var(--blue);
+  }
+}
+
+/* Color user-profile related icons (Dm's) */
+
+/* 4 user-profile icons - Global icons (Dm & Server) */
+.wrapper_da5890 {
+  /* NOTE: Requires plugin "ReviewDB" for this icon - config */
+  [aria-label="View Reviews"] path {
+    &:nth-child(1) {
+      color: var(--silver);
+    }
+
+    &:nth-child(2) {
+      color: var(--orange);
+    }
+  }
+
+  /* NOTE: Requires the "ShowHiddenThings" plugin for this icon - config */
+  [aria-label="Open in Mod View"] path {
+    &:nth-child(1) {
+      /* Sword right to left */
+      color: var(--blue);
+    }
+
+    &:nth-child(2) {
+      /* Sword left to right */
+      color: var(--pink);
+    }
+  }
+
+  /* Add friend & Friend icon - config */
+  [aria-label="Add Friend"] path {
+    &:nth-child(1) {
+      color: var(--red);
+    }
+
+    &:nth-child(2) {
+      color: var(--silver);
+    }
+  }
+
+  [aria-label="Friend"] path {
+    &:nth-child(1) {
+      color: var(--yellow);
+    }
+
+    &:nth-child(2) {
+      color: var(--green);
+    }
+  }
+
+  /* More (3 dots) icon - config */
+  [aria-label="More"] path {
+    color: var(--blue);
+  }
+}
+
+/* Not nessecairly dm's related */
+
+/* Icon inside embedded activity in user-profile*/
+/* NOTE: Needs change */
+.platformIcon__39ec2 {
+  background-color: var(--red);
+}
+
+/* Home icon -> dm's - Possible custom home icon image*/
+.childWrapper__6e9f8 {
+  > svg {
+    background: var(--discord-home-icon) center/cover no-repeat;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+  }
+
+  path {
+    display: none;
+  }
+}
