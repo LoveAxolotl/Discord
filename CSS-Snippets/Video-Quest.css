@@ -1,0 +1,232 @@
+/*
+ * Snippet name: Video-Quest.css
+ * Description: Recolor the video quest layout.
+ *
+ * Author: Love_Axolotl
+ * Discord ID: 751063943065370644
+ *
+*/
+
+:root {
+  --pink-rgba: rgba(255, 0, 255, .8);
+  --green-rgba: rgba(0, 255, 0, .5);
+  --green-rgba-2: rgba(0, 255, 0, .8);
+  --purple-rgba: rgba(142, 11, 142, .6);
+  --red-rgba: rgba(255, 0, 0, .4);
+  --light-blue-rgba: rgba(0, 255, 255, .4);
+
+  --silver: rgb(145, 140, 140);
+  --red: rgb(255, 0, 0);
+  --light-blue: rgba(0, 255, 255, .9);
+  --green: rgb(0, 255, 0);
+
+  --video-progress-bar-not-seen-yet: var(--silver);
+  --video-progress-bar-color: var(--green-rgba-2);
+
+  --pause-icon-color: rgba(0, 0, 200, .7);
+  --play-again-icon-color: var(--green-rgba-2);
+
+  --rewind-\/-skip-ahead-icon-color: rgba(0, 255, 255, .7);
+  --cant-skip-yet-icon-color: rgba(255, 165, 0, .4);
+  --volume-slider-color: var(--pink-rgba);
+
+  --video-time-color: rgb(255, 165, 0);
+}
+
+/* Video quest display */
+[class^="modalContent"] {
+  [class^="text-lg/semibold"] {
+    color: var(--silver) !important;
+  }
+
+  svg[class^="verticalDivider"] {
+    width: 10px;
+    height: 50px;
+    fill: pink;
+    path { /* Custom path, default path is hidden overflow */
+      d: path("M 13 5 a 1 1 0 1 0 -3 0 v 30 a 1 1 0 1 0 3 0 V 5 Z"); /* Vertical divider */
+      stroke-width: 0;
+      transform: translate(-10px, 0); /* Prevent hidden overflow */
+    }
+  }
+  svg[class^="endScreenIcon"] path {
+    fill: var(--green-rgba);
+  }
+
+  [class^="contentHeader_"] {
+    background-color: var(--purple-rgba);
+    
+    /* "... Quest" name */
+    [class^="heading-md/semibold"] {
+      color: pink !important;
+    }
+    
+    /* "Pre-Order Now" text */
+    [class^="text-sm/medium"] {
+      color: var(--pink-rgba) !important;
+    }
+  }
+
+  [class^="outer"] { /* Icon top right */
+    circle[stroke="url(#linear)"] {
+      stroke: var(--silver);
+    }
+    circle[stroke="var(--green-330)"] {
+      stroke: var(--green-rgba-2);
+    }
+  }
+
+  [class^="endScreenPanel_"] {
+    background: transparent;
+    border: 2px solid var(--purple-rgba);
+
+    [class*="TextTitle_"] {
+      color: pink;
+    }
+    [class*="TextSubtitle_"] {
+      color: var(--pink-rgba);
+    }
+  }
+
+  [class^="videoFooterCont_"] {
+    [class^="progress__"][style="background-color: var(--background-modifier-active);"] {
+      background-color: var(--video-progress-bar-not-seen-yet) !important;
+    }
+    [class^="progressBar__"] {
+      background-color: var(--video-progress-bar-color) !important;
+    }
+
+    /* Video controls */
+    [aria-label^="Play"] path { /* Play & Play again icons */
+      fill: var(--play-again-icon-color);
+    }
+
+    [aria-label^="Rewind"] path, /* Rewind/Skip ahead 10 seconds */
+    [aria-label^="Skip"] path,
+    [aria-label="Toggle transcript"] path,
+    [aria-label="Toggle captions"] path,
+    [aria-label="Toggle full screen"] path {
+      fill: var(--rewind-\/-skip-ahead-icon-color) !important;
+    }
+    [aria-label="Can’t skip unwatched sections yet"] path {
+      fill: var(--cant-skip-yet-icon-color) !important;
+    }
+
+    [aria-label="Change volume"] path {
+      fill: var(--volume-slider-color);
+    }
+
+    [class^="mini"] [class^="bar_"],
+    [class^="slider"] [class^="bar_"] { /* Volume bar background */
+      background-color: var(--silver);
+      border: 1px solid var(--purple-rgba);
+    }
+
+    [class^="barFill"] { /* Volume bar slider color */
+      background-color: var(--volume-slider-color) !important;
+      border-radius: 4px;
+    }
+    [class^="grabber"] { /* Volume bar slider circle */
+      background-color: var(--volume-slider-color);
+      border: 1px solid var(--purple-rgba);
+    }
+
+    [class*="TimeDisplay"], /* Video duration & seperator text color */
+    [class*="TimeSeparator"] {
+      color: var(--video-time-color);
+    }
+  }
+
+  [class^="contentFooter_"] {
+    background-color: var(--purple-rgba);
+
+    >[class*="secondary"] { /* Close button */
+      border-color: var(--red);
+      border-width: 2px;
+      color: var(--red);
+    }
+
+    [class^="contentFooterButtonCont"] {
+      [class*="secondary"] { /* Share button */
+        border-color: var(--light-blue);
+        border-width: 2px;
+        color: var(--light-blue);
+      }
+
+      [class*="lookFilled"][class*="colorBrand"] { /* Claim reward button */
+        background-color: transparent;
+        border-color: var(--green);
+        border-width: 2px;
+        color: var(--green);
+      }
+    }
+  }
+}
+
+/* Captcha container */
+[class^="layerContainer__"] {
+
+  [aria-label="Close"] path {
+    fill: var(--red);
+  }
+  
+  [class^="closeBtn_"]:hover,
+  [class*="color-mix_"]:hover {
+    border: 1px solid var(--red);
+    background-color: var(--red-rgba);
+    color: transparent;
+    border-radius: 6px;
+  }
+
+  [class^="container__"][class*="size-sm__"] {
+    background: rgba(142, 11, 142, .4);
+    border: 2px solid var(--purple-rgba);
+    border-radius: 15px;
+
+    [class^="heading-xl/semibold"] {
+      color: pink !important;
+    }
+
+    [class^="text-md/normal_"] {
+      color: var(--pink-rgba) !important;
+    }
+  }
+
+  [class^="modal_"][class*="root_"] {
+    background-color: var(--purple-rgba);
+    border: var(--pink-rgba);
+
+    [class^="defaultColor_"] {
+      color: var(--light-blue);
+    }
+
+    [class*="primary_"] {
+      background-color: transparent;
+      border: 2px solid var(--light-blue);
+      color: var(--light-blue);
+    }
+
+    [class*="primary_"]:hover {
+      background-color: var(--light-blue-rgba);
+    }
+
+    [class*="secondary_"] {
+      background-color: transparent;
+      border: 2px solid rgb(0, 0, 0);
+      color: rgb(0, 0, 0);
+    }
+
+    [class*="secondary_"]:hover {
+      background-color: rgba(0, 0, 0, .4);
+    }
+  }
+
+  [class^="rootContainer__"][class*="root__"] {
+    background-color: transparent;
+    
+    [class^="headerContainer_"],
+    [class^="footer"] {
+      background-color: transparent;
+    }
+  }
+}

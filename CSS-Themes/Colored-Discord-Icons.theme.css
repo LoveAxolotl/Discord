@@ -257,7 +257,8 @@
     }
   }
 
-  /* NOTE: Requires the "ShowHiddenThings" plugin for this icon - config */
+  /* NOTE: Requires plugin "ShowHiddenThings" for this icon - config */
+  /* Server only */
   [aria-label="Open in Mod View"] path {
     &:nth-child(1) {
       /* Sword right to left */

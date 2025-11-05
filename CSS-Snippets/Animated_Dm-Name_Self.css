@@ -1,0 +1,77 @@
+/*
+ * @name: Animated_Dm-Name_Self.css
+ * @description: Your own name animated in dms!
+ * @version: 0.0.1
+ *
+ * @author: Love_Axolotl
+ * @authorId: 751063943065370644
+ *
+ * To do:
+ * Download the Animated_Dm-Name_Self.css file and place it in your Vencord\themes folder.
+ * Change the name in the [data-text="Love_Axolotl"] attribute to your discord name.
+ * You can also change the colors in the :root {} section.
+*/
+:root {
+  /* Background colors */
+  --white: rgb(245, 245, 245);
+  --main-color: #ff00de;
+  --color-1: #ff33e5;
+  --color-2: #ff99f2;
+  /* Name stroke styles */
+  --stroke-color: hsl(from var(--main-color) h s max(12, l * 0.4)); /* Darker than --main-color */
+  --stroke-width: calc(1.6px + .04em);
+
+  --background: linear-gradient(var(--deg), var(--white) 0%, var(--color-2) 8%, var(--color-1) 15%, var(--main-color) 25%,
+    var(--color-2) 45%, var(--main-color) 55%, var(--white) 75%, var(--color-2) 83%, var(--color-1) 90%, var(--main-color) 100%
+  );
+
+  /* Animation config      Recommended settings */
+  --name: Vertical;    /* Vertical  | Horizontal */
+  --deg: 180deg;       /* 180deg    | 90deg */
+  --bg-size: 100% 400%;/* 100% 400% | 400% 100% */
+  --duration: 4s;      /* 4s        | 6s */
+  --timing: linear;    /* Determines how the animation will be played */
+  --delay: 2s;         /* 2s - Time before the animation starts again after it ended */
+  --count: infinite;   /* infinite - A number or infinite */
+}
+
+/* The animations */
+@keyframes Vertical {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+@keyframes Horizontal {
+  0% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+/* Dm section */
+[aria-label=" (channel)"] {
+  [data-text="Love_Axolotl"].username_c19a55:before {
+    background: var(--background);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: var(--bg-size);
+    content: attr(data-text);
+    position: absolute;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0;
+    animation: var(--name) var(--duration) var(--timing) var(--delay) var(--count) forwards;
+  }
+
+  [data-text="Love_Axolotl"].username_c19a55 {
+    paint-order: stroke fill;
+    -webkit-text-stroke: var(--stroke-width) var(--stroke-color);
+    color: var(--stroke-color);
+    transition: color 266ms cubic-bezier(.43, .21, .27, .78);
+  }
+}
