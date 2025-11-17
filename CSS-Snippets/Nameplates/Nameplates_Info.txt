@@ -1,0 +1,389 @@
+Name: Nameplates.txt file
+Description: 74 Nameplates and their Description, Style(Background), Video & Poster.
+Version: 0.0.1
+
+Issues: Let me know if some nameplates are missing!
+
+Author: Love_Axolotl
+AuthorId: 75106394306537064
+
+All src's & posters start with:
+- https://cdn.discordapp.com/assets/collectibles/nameplates/
+- The actual nameplate names are in the 'Video' & 'Poster' data to remove 74x the same https link.
+
+The order is as following:
+- Count[number] - Description[string]
+- Style[css]
+- Video[https]
+- Poster[https]
+
+
+1 - Deep blue starry night sky gradient with twinkling stars.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: nameplates/twilight/asset.webm
+Poster: nameplates/twilight/static.png
+
+2 - Hanging celestial chains adorned with stars and crystal ornaments that create a magical curtain effect.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: lunar_eclipse/moonlit_charm/asset.webm
+Poster: lunar_eclipse/moonlit_charm/static.png
+
+3 - Purple background with delicate cherry blossom tree and falling pink petals.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: nameplates_v3/bonsai/asset.webm
+Poster: nameplates_v3/bonsai/static.png
+
+4 - Purple night sky background with crescent moon, twinkling stars and eclipse animation covering the moon.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplates_v2/spirit_moon/asset.webm
+Poster: nameplates_v2/spirit_moon/static.png
+
+5 - Digital blue-purple background with pixelated glitch effects and data corruption visuals.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplates_v2/glitch/asset.webm
+Poster: nameplates_v2/glitch/static.png
+
+6 - Red hearts flying and twinkling away.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: nameplates/angels/asset.webm
+Poster: nameplates/angels/static.png
+
+7 - Teal-green background with shimmering aurora borealis light effects.
+Style: background: linear-gradient(90deg, rgba(8, 100, 96, 0.1) 0%, rgba(8, 100, 96, 0.4) 100%);
+Video: nameplates_v3/aurora/asset.webm
+Poster: nameplates_v3/aurora/static.png
+
+8 - Spring flowers sway in the green grass.
+Style: background: linear-gradient(90deg, rgba(0, 128, 183, 0.1) 0%, rgba(0, 128, 183, 0.4) 100%);
+Video: nameplates/spirit_of_spring/asset.webm
+Poster: nameplates/spirit_of_spring/static.png
+
+9 - Blue underwater background with coral reef and swimming fish.
+Style: background: linear-gradient(90deg, rgba(0, 128, 183, 0.1) 0%, rgba(0, 128, 183, 0.4) 100%);
+Video: nameplates_v3/under_the_sea/asset.webm
+Poster: nameplates_v3/under_the_sea/static.png
+
+10 - An adorably tiny purple flower that dances and wiggles happily from side to side, emitting sparkles of joy.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: nameplate_bonanza/bloomling/asset.webm
+Poster: nameplate_bonanza/bloomling/static.png
+
+11 - Luna moth with glowing accents fluttering around the radiating light.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: lunar_eclipse/luna_moth/asset.webm
+Poster: lunar_eclipse/luna_moth/static.png
+
+12 - A pink toad sitting in the corner with a soft pink gradient background.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: woodland_friends/hoppy_bois_perch/asset.webm
+Poster: woodland_friends/hoppy_bois_perch/static.png
+
+13 - Pink cherry blossom petals scattered across a pastel gradient background.
+Style: background: linear-gradient(90deg, rgba(0, 128, 183, 0.1) 0%, rgba(0, 128, 183, 0.4) 100%);
+Video: woodland_friends/petal_bloom/asset.webm
+Poster: woodland_friends/petal_bloom/static.png
+
+14 - Orange cat and grey cat giving each other a high five.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplates/cat_beans/asset.webm
+Poster: nameplates/cat_beans/static.png
+
+15 - Orange and yellow autumn leaves drifting on the breeze.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: woodland_friends/autumn_breeze/asset.webm
+Poster: woodland_friends/autumn_breeze/static.png
+
+16 - White cosmic stars and dust in the atmosphere.
+Style: background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.4) 100%);
+Video: nameplate_bonanza/twilight_dusk/asset.webm
+Poster: nameplate_bonanza/twilight_dusk/static.png
+
+17 - Hot pink flames perpetually burning.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplates/vengeance/asset.webm
+Poster: nameplates/vengeance/static.png
+
+18 - Pink cosmic stars and dust in the atmosphere.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: nameplate_bonanza/twilight_fuchsia/asset.webm
+Poster: nameplate_bonanza/twilight_fuchsia/static.png
+
+19 - Luminous fireflies fly across the grassy meadow.
+Style: background: linear-gradient(90deg, rgba(0, 128, 183, 0.1) 0%, rgba(0, 128, 183, 0.4) 100%);
+Video: nameplate_bonanza/firefly_meadow/asset.webm
+Poster: nameplate_bonanza/firefly_meadow/static.png
+
+20 - Purple and pink nebula clouds with soft ethereal lighting.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplate_bonanza/cosmic_storm/asset.webm
+Poster: nameplate_bonanza/cosmic_storm/static.png
+
+21 - Glittering sparkles and heart shapes pulse repeatedly under glowing blue lights.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: nameplate_bonanza/magic_hearts_blue/asset.webm
+Poster: nameplate_bonanza/magic_hearts_blue/static.png
+
+22 - Blue underwater background with coral reef and swimming fish.
+Style: background: linear-gradient(90deg, rgba(0, 128, 183, 0.1) 0%, rgba(0, 128, 183, 0.4) 100%);
+Video: nameplates_v3/under_the_sea/asset.webm
+Poster: nameplates_v3/under_the_sea/static.png
+
+23 - A dancing purple fairy stands on a purple gradient background with a bright starburst and moon.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplate_bonanza/fairies/asset.webm
+Poster: nameplate_bonanza/fairies/static.png
+
+24 - An adorably tiny purple flower that dances and wiggles happily from side to side, emitting sparkles of joy.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: nameplate_bonanza/bloomling/asset.webm
+Poster: nameplate_bonanza/bloomling/static.png
+
+25 - Natural green grass with a cat kneading it into place.
+Style: background: linear-gradient(90deg, rgba(0, 128, 183, 0.1) 0%, rgba(0, 128, 183, 0.4) 100%);
+Video: nameplates_v3/touch_grass/asset.webm
+Poster: nameplates_v3/touch_grass/static.png
+
+26 - White cosmic stars and dust in the atmosphere.
+Style: background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.4) 100%);
+Video: nameplate_bonanza/twilight_dusk/asset.webm
+Poster: nameplate_bonanza/twilight_dusk/static.png
+
+27 - Pink cosmic stars and dust in the atmosphere.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: nameplate_bonanza/twilight_fuchsia/asset.webm
+Poster: nameplate_bonanza/twilight_fuchsia/static.png
+
+28 - Planets and cosmic clouds in purple and blue tones with lens flare effects.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: nameplate_bonanza/planet_rings/asset.webm
+Poster: nameplate_bonanza/planet_rings/static.png
+
+29 - A shimmering wave of purple water, filled with twinkling stars, sweeps along the beach.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplate_bonanza/starfall_tides_void/asset.webm
+Poster: nameplate_bonanza/starfall_tides_void/static.png
+
+30 - Purple night sky background with crescent moon, twinkling stars and eclipse animation covering the moon.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplates_v2/spirit_moon/asset.webm
+Poster: nameplates_v2/spirit_moon/static.png
+
+31 - Ocean blue background with shooting stars washed up onto shore.
+Style: background: linear-gradient(90deg, rgba(8, 100, 96, 0.1) 0%, rgba(8, 100, 96, 0.4) 100%);
+Video: nameplates_v2/starfall_tides/asset.webm
+Poster: nameplates_v2/starfall_tides/static.png
+
+32 - Dark blue background with glowing legendary sword and mystical light effects.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: nameplates_v2/sword_of_legend/asset.webm
+Poster: nameplates_v2/sword_of_legend/static.png
+
+33 - Warm pink-purple background with sparkling magical dust particles floating.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: nameplates_v2/pixie_dust/asset.webm
+Poster: nameplates_v2/pixie_dust/static.png
+
+34 - Hanging celestial chains adorned with stars and crystal ornaments that create a magical curtain effect.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: lunar_eclipse/moonlit_charm/asset.webm
+Poster: lunar_eclipse/moonlit_charm/static.png
+
+35 - An orange and a red koi fish swim together in a pond.
+Style: background: linear-gradient(90deg, rgba(0, 128, 183, 0.1) 0%, rgba(0, 128, 183, 0.4) 100%);
+Video: nameplates/koi_pond/asset.webm
+Poster: nameplates/koi_pond/static.png
+
+36 - Luna moth with glowing accents fluttering around the radiating light.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: lunar_eclipse/luna_moth/asset.webm
+Poster: lunar_eclipse/luna_moth/static.png
+
+37 - Hot pink flames perpetually burning.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplates/vengeance/asset.webm
+Poster: nameplates/vengeance/static.png
+
+38 - Orange cat and grey cat giving each other a high five.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplates/cat_beans/asset.webm
+Poster: nameplates/cat_beans/static.png
+
+39 - Spring flowers sway in the green grass.
+Style: background: linear-gradient(90deg, rgba(0, 128, 183, 0.1) 0%, rgba(0, 128, 183, 0.4) 100%);
+Video: nameplates/spirit_of_spring/asset.webm
+Poster: nameplates/spirit_of_spring/static.png
+
+40 - Deep blue starry night sky gradient with twinkling stars.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: nameplates/twilight/asset.webm
+Poster: nameplates/twilight/static.png
+
+41 - Warm pink-purple background with sparkling magical dust particles floating.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: nameplates_v2/pixie_dust/asset.webm
+Poster: nameplates_v2/pixie_dust/static.png
+
+42 - Glittering sparkles and heart shapes pulse repeatedly under glowing blue lights.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: nameplate_bonanza/magic_hearts_blue/asset.webm
+Poster: nameplate_bonanza/magic_hearts_blue/static.png
+
+43 - Crimson red and black flowing patterns of cursed energy dance across the red nameplate
+Style: background: linear-gradient(90deg, rgba(144, 0, 7, 0.1) 0%, rgba(144, 0, 7, 0.4) 100%);
+Video: plastic/yuji_itadori/asset.webm
+Poster: plastic/yuji_itadori/static.png
+
+44 - Satoru Gojo's glowing blue eye and hand gesture with white spherical cursed energy surrounding the blue nameplate
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: plastic/satoru_gojo/asset.webm
+Poster: plastic/satoru_gojo/static.png
+
+45 - Blue and orange data stream nameplate with digital interference pattern.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: straw/2035/asset.webm
+Poster: straw/2035/static.png
+
+46 - Mini Goku in Super Saiyan form radiating golden energy.
+Style: background: linear-gradient(90deg, rgba(137, 58, 153, 0.1) 0%, rgba(137, 58, 153, 0.4) 100%);
+Video: rock/mini_goku/asset.webm
+Poster: rock/mini_goku/static.png
+
+47 - Golden vault symbol with smoke fuming out.
+Style: background: linear-gradient(90deg, rgba(144, 0, 7, 0.1) 0%, rgba(144, 0, 7, 0.4) 100%);
+Video: box/vault/asset.webm
+Poster: box/vault/static.png
+
+48 - Secret agent face scan with glitchy visual effects.
+Style: background: linear-gradient(90deg, rgba(45, 84, 1, 0.1) 0%, rgba(45, 84, 1, 0.4) 100%);
+Video: paper/secret_agent/asset.webm
+Poster: paper/secret_agent/static.png
+
+49 - Gomah in action pose ready to strike.
+Style: background: linear-gradient(90deg, rgba(144, 0, 7, 0.1) 0%, rgba(144, 0, 7, 0.4) 100%);
+Video: rock/gomah/asset.webm
+Poster: rock/gomah/static.png
+
+50 - Purple-toned nameplate with camouflage pattern background.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: straw/camo_master/asset.webm
+Poster: straw/camo_master/static.png
+
+51 - TV Woman with expressive facial expressions.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: paper/tv_woman/asset.webm
+Poster: paper/tv_woman/static.png
+
+52 - Red and yellow cursed energy tendrils and flowing black slashes surrounding a red nameplate.
+Style: background: linear-gradient(90deg, rgba(144, 0, 7, 0.1) 0%, rgba(144, 0, 7, 0.4) 100%);
+Video: plastic/ryomen_sukuna/asset.webm
+Poster: plastic/ryomen_sukuna/static.png
+
+53 - A glowing Dragon Ball hovers over the nameplate.
+Style: background: linear-gradient(90deg, rgba(144, 0, 7, 0.1) 0%, rgba(144, 0, 7, 0.4) 100%);
+Video: rock/dragon_ball/asset.webm
+Poster: rock/dragon_ball/static.png
+
+54 - Mini Vegeta in Super Saiyan form with blazing yellow aura.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: rock/mini_vegeta/asset.webm
+Poster: rock/mini_vegeta/static.png
+
+55 - Claptrap robot celebrating on a pink gradient background.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: box/claptrap/asset.webm
+Poster: box/claptrap/static.png
+
+56 - Cracked glass effect with purple Eridian energy swirls.
+Style: background: linear-gradient(90deg, rgba(137, 58, 153, 0.1) 0%, rgba(137, 58, 153, 0.4) 100%);
+Video: box/shattered_veil/asset.webm
+Poster: box/shattered_veil/static.png
+
+57 - The psycho bandit mask glows red with blue paint splatter effects around the mask.
+Style: background: linear-gradient(90deg, rgba(0, 128, 183, 0.1) 0%, rgba(0, 128, 183, 0.4) 100%);
+Video: box/ripper_awakens/asset.webm
+Poster: box/ripper_awakens/static.png
+
+58 - Red digital corruption effect nameplate with butterfly motif.
+Style: background: linear-gradient(90deg, rgba(144, 0, 7, 0.1) 0%, rgba(144, 0, 7, 0.4) 100%);
+Video: straw/fluttering_static/asset.webm
+Poster: straw/fluttering_static/static.png
+
+59 - NPC man gets flushed into the toilet.
+Style: background: linear-gradient(90deg, rgba(246, 205, 18, 0.1) 0%, rgba(246, 205, 18, 0.4) 100%);
+Video: paper/skibidi_toilet/asset.webm
+Poster: paper/skibidi_toilet/static.png
+
+60 - Dark purple nameplate featuring creepy toy monkey imagery.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: straw/bye_bye/asset.webm
+Poster: straw/bye_bye/static.png
+
+61 - Gomah in action pose ready to strike.
+Style: background: linear-gradient(90deg, rgba(144, 0, 7, 0.1) 0%, rgba(144, 0, 7, 0.4) 100%);
+Video: rock/gomah/asset.webm
+Poster: rock/gomah/static.png
+
+62 - Red dragon breathing fiery flames.
+Style: background: linear-gradient(90deg, rgba(144, 0, 7, 0.1) 0%, rgba(144, 0, 7, 0.4) 100%);
+Video: chance/red_dragon/asset.webm
+Poster: chance/red_dragon/static.png
+
+63 - Purple die rolling with mystical aura energy.
+Style: background: linear-gradient(90deg, rgba(137, 58, 153, 0.1) 0%, rgba(137, 58, 153, 0.4) 100%);
+Video: chance/d20_roll/asset.webm
+Poster: chance/d20_roll/static.png
+
+64 - Blue background with floating water droplets and a glowing drop of water symbol.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: spell/blue_mana/asset.webm
+Poster: spell/blue_mana/static.png
+
+65 - Mystical dark purple energy bursting around the skull symbol.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: spell/black_mana/asset.webm
+Poster: spell/black_mana/static.png
+
+66 - A pink and purple gradient background with floating petals surrounded by an ethereal aura.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: petal/spirit_blossom_petals/asset.webm
+Poster: petal/spirit_blossom_petals/static.png
+
+67 - Cute owl gazing into mystical purple sky.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: chance/owlbear_cub/asset.webm
+Poster: chance/owlbear_cub/static.png
+
+68 - Fire ember particles drift around the flickering flames of the fire mana orb.
+Style: background: linear-gradient(90deg, rgba(144, 0, 7, 0.1) 0%, rgba(144, 0, 7, 0.4) 100%);
+Video: spell/red_mana/asset.webm
+Poster: spell/red_mana/static.png
+
+69 - Leaves fall while the nature symbol glows softly.
+Style: background: linear-gradient(90deg, rgba(4, 123, 32, 0.1) 0%, rgba(4, 123, 32, 0.4) 100%);
+Video: spell/green_mana/asset.webm
+Poster: spell/green_mana/static.png
+
+70 - A blue aura dragon spirit enveloped in swirling purple spiritual flames with ethereal wisps dancing around it.
+Style: background: linear-gradient(90deg, rgba(1, 49, 194, 0.1) 0%, rgba(1, 49, 194, 0.4) 100%);
+Video: petal/yunaras_aion_erna/asset.webm
+Poster: petal/yunaras_aion_erna/static.png
+
+71 - Glowing green spirit orbs floating mysteriously above misty waters with supernatural light patterns.
+Style: background: linear-gradient(90deg, rgba(8, 100, 96, 0.1) 0%, rgba(8, 100, 96, 0.4) 100%);
+Video: petal/spirit_blossom_springs/asset.webm
+Poster: petal/spirit_blossom_springs/static.png
+
+72 - Golden feathers fall while the sun symbol shimmers in the sunlight.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: spell/white_mana/asset.webm
+Poster: spell/white_mana/static.png
+
+73 - Pink cherry blossom flowers scatter.
+Style: background: linear-gradient(90deg, rgba(137, 58, 153, 0.1) 0%, rgba(137, 58, 153, 0.4) 100%);
+Video: nameplates/cherry_blossoms/asset.webm
+Poster: nameplates/cherry_blossoms/static.png
+
+74 - Purple skies with busy nightlife twinkling in the night.
+Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
+Video: nameplates/cityscape/asset.webm
+Poster: nameplates/cityscape/static.png
