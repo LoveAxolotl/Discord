@@ -3,7 +3,7 @@
  * @description Animated dm names for Nitro, Non-Nitro users & Bots.
  * 
  * @version 0.0.1
- * @source https://github.com/LoveAxolotl/Discord/CSS-Snippets/Animated_Dm-Names.css
+ * @source https://github.com/LoveAxolotl/Discord/blob/main/CSS-Snippets/Animated_Dm-Names.css
  *
  * @author Love_Axolotl
  * @authorId 751063943065370644
@@ -12,22 +12,23 @@
  * Credits to AcheronX for testing this with me.
 */
 :root {
+  --stroke-width: calc(1.6px + .04em);
   /* Background colors */
   --white: rgb(245, 245, 245);
+
   --main-color-pink: #ff00de;
   --color-pink-1: #ff33e5;
   --color-pink-2: #ff99f2;
   --stroke-color-nitro-users: hsl(from var(--main-color-pink) h s max(12, l * 0.4));
-  --stroke-width: calc(1.6px + 0.04em);
   --name-background-nitro-users: linear-gradient(var(--deg), var(--white) 0%, var(--color-pink-2) 8%, var(--color-pink-1) 15%, var(--main-color-pink) 25%,
     var(--color-pink-2) 45%, var(--main-color-pink) 55%, var(--white) 75%, var(--color-pink-2) 83%, var(--color-pink-1) 90%, var(--main-color-pink) 100%
   );
 
-  --main-color-blue: #00d4ff;
+  --main-color-blue: #0ebadd;
   --color-blue-1: #33e5ff;
   --color-blue-2: #99f2ff;
-  --stroke-color-dark-blue: hsl(from var(--main-color-blue) h s max(12, l * 0.4));
-  --name-background-blue: linear-gradient(var(--deg), var(--white) 0%, var(--color-blue-2) 8%, var(--color-blue-1) 15%, var(--main-color-blue) 25%,
+  --stroke-color-non-nitro-users: hsl(from var(--main-color-blue) h s max(12, l * 0.4));
+  --name-background-non-nitro-users: linear-gradient(var(--deg), var(--white) 0%, var(--color-blue-2) 8%, var(--color-blue-1) 15%, var(--main-color-blue) 25%,
     var(--color-blue-2) 45%, var(--main-color-blue) 55%, var(--white) 75%, var(--color-blue-2) 83%, var(--color-blue-1) 90%, var(--main-color-blue) 100%
   );
 
@@ -51,7 +52,7 @@
   --name: Vertical;     /* Vertical  | Horizontal */
   --deg: 180deg;        /* 180deg    | 90deg */
   --bg-size: 100% 400%; /* 100% 400% | 400% 100% */
-  --duration: 4s;       /* 4s        | 5s */
+  --duration: 4s;       /* 4s        | 6s */
   --delay: 2s;          /* 2s - Time before the animation starts again after it ended */
   --count: infinite;    /* infinite - A number or infinite */
 
@@ -61,14 +62,13 @@
   /*
     Must match with the "Animation cofig" background size:
     100% 400%: Vertical, Toon-, Pop-Bounce-Animation
-    400% 100%: Horizontal, Pop-Bounce-Animation-Right
+    400% 100%: Horizontal
     Set --dm-list-name-animation to none to disable Dm-list animations
   */
   --dm-list-name-animation: var(--name) var(--duration) linear var(--delay) var(--count) forwards;
 
-  /* Dm users variables */
-  --user-dm-bg: var(--name-background-nitro-users);
-  --user-dm-subtext-bg: linear-gradient(90deg, var(--color-pink-1), var(--color-pink-1));
+  /* Dm users variable */
+  --user-dm-bg: var(--name-background-non-nitro-users);
 
   /* Group dm variables - The animation is based on "Animation config" */
   --group-dm-name-bg: var(--name-background-orange);
@@ -78,14 +78,15 @@
   --dm-messages-name-animation: var(--name) var(--duration) cubic-bezier(.44, .29, .48, .1) var(--delay) var(--count) forwards;
 
   /* Friends tab variables */
-  --friends-list-name-color: var(--name-background-blue);
+  --friends-list-name-color: var(--name-background-non-nitro-users);
   
   /* Whether to show the users discriminator after the name */
   --discriminator-visibility: visible;
-  --discriminator-color: var(--color-blue-1);
+  --discriminator-color-default: var(--main-color-blue);
+  --discriminator-color-nitro: var(--color-pink-1);
 }
 
-/* The animations. */
+/* The animation */
 @keyframes Vertical {
   0% {
     background-position: 50% 0%;
@@ -94,6 +95,7 @@
     background-position: 50% 100%;
   }
 }
+
 @keyframes Horizontal {
   0% {
     background-position: 100% 50%
@@ -102,7 +104,6 @@
     background-position: 0% 50%;
   }
 }
-
 
 @keyframes Pop-Bounce-Animation {
   0% {
@@ -115,23 +116,6 @@
   35% {
     perspective: 1px;
     transform: translate3d(0, .08em, 0);
-  }
-  50%, 100% {
-    perspective: 1px;
-    transform: translateZ(0);
-  }
-}
-@keyframes Pop-Bounce-Animation-Right {
-  0% {
-    transform: translateZ(0);
-  }
-  18% {
-    perspective: 1px;
-    transform: translate3d(-.05em, 0, 0);
-  }
-  35% {
-    perspective: 1px;
-    transform: translate3d(.08em, 0, 0);
   }
   50%, 100% {
     perspective: 1px;
@@ -174,7 +158,6 @@
 /* Group name */
 [aria-label$="(group message)"] .overflowTooltip__972a0 {
   background: var(--group-dm-name-bg);
-  background-size: var(--bg-size);
   animation: var(--dm-list-name-animation);
 }
 
@@ -187,24 +170,22 @@
 /* Dm list - Username styling */
 
 /* Fix name overflow */
-[aria-label$="(direct message)"] .overflow_b0dfc2,
-[aria-label$="(direct message)"] .innerContainer_dfb989,
+[aria-label*="(direct message)"] .overflow_b0dfc2, .innerContainer_dfb989,
 [aria-label$="(group message)"] .overflow_b0dfc2 {
   overflow: var(--name-overflow);
 }
 
 /* User dm names without special Nitro effects */
-[aria-label$="(direct message)"] .overflowTooltip__972a0:not(.withDisplayNameStyles__972a0) {
+[aria-label*="(direct message)"] .overflowTooltip__972a0:not(.withDisplayNameStyles__972a0) {
   background: var(--user-dm-bg);
-  background-size: var(--bg-size);
   animation: var(--dm-list-name-animation);
 }
 
 /* Muted names style */
 [aria-label$="(group message)"] .muted__20a53 .overflowTooltip__972a0,
 [aria-label$="(group message)"] .muted__20a53 .subText__20a53,
-[aria-label$="(direct message)"] .muted__20a53 .overflowTooltip__972a0,
-[aria-label$="(direct message)"] .muted__20a53 .subText__20a53 {
+[aria-label*="(direct message)"] .muted__20a53 .overflowTooltip__972a0,
+[aria-label*="(direct message)"] .muted__20a53 .subText__20a53 {
   color: var(--dm-list-muted-color);
   animation-play-state: paused;
 }
@@ -212,10 +193,11 @@
 /* Group name, Group member count & Username without Nitro styles */
 [aria-label$="(group message)"] .overflowTooltip__972a0,
 [aria-label$="(group message)"] .subText__20a53,
-[aria-label$="(direct message)"] .overflowTooltip__972a0:not(.withDisplayNameStyles__972a0) {
+[aria-label*="(direct message)"] .overflowTooltip__972a0:not(.withDisplayNameStyles__972a0) {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  background-size: var(--bg-size);
 }
 
 /* Dm's usernames styling */
@@ -223,14 +205,6 @@
   /* Nitro users */
   .username_c19a55:before {
     background: var(--name-background-nitro-users);
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-size: var(--bg-size);
-    content: attr(data-text);
-    position: absolute;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 0;
-    animation: var(--dm-messages-name-animation);
   }
 
   .username_c19a55 {
@@ -238,7 +212,6 @@
     -webkit-text-stroke: var(--stroke-width) var(--stroke-color-nitro-users);
     color: var(--stroke-color-nitro-users);
     transition: color 266ms cubic-bezier(.43, .21, .27, .78);
-    background-size: var(--bg-size);
 
     /* Plugin for "(name)" behind names */
     .vc-smyn-suffix {
@@ -249,9 +222,6 @@
   /* Users without Nitro */
   .username_c19a55:not(.dnsFont__89a31):before {
     background: var(--name-background-orange);
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-size: var(--bg-size);
   }
 
   .username_c19a55:not(.dnsFont__89a31) {
@@ -266,9 +236,6 @@
   /* Bots name color */
   .hasBadges_c19a55 .username_c19a55:before {
     background: var(--bot-name-background);
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-size: var(--bg-size);
   }
 
   .hasBadges_c19a55 .username_c19a55 {
@@ -278,6 +245,20 @@
     .vc-smyn-suffix {
       color: var(--bot-color-1);
     }
+  }
+
+  /* Username styles :before  */
+  .username_c19a55:before,
+  .username_c19a55:not(.dnsFont__89a31):before,
+  .hasBadges_c19a55 .username_c19a55:before {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: var(--bg-size);
+    content: attr(data-text);
+    position: absolute;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0;
+    animation: var(--dm-messages-name-animation);
   }
 }
 
@@ -332,7 +313,7 @@
 
 .innerContainer_dfb989.toon_dfb989 {
   --toon-stroke-color: hsl(from var(--custom-display-name-styles-main-color) h s max(12, l* 0.4));
-  --toon-stroke-width: calc(1.6px + 0.04em);
+  --toon-stroke-width: calc(1.6px + .04em);
   --toon-margin: calc(var(--toon-stroke-width)* -1);
   paint-order: stroke fill;
   position: relative;
@@ -384,7 +365,6 @@
   -webkit-text-stroke-width: var(--neon-stroke-width);
   -webkit-text-stroke-color: hsl(from var(--custom-display-name-styles-main-color) h calc(s* 1.2) calc(min(60, l + 10* clamp(0, (60 - l), 1))));
   color: var(--white);
-  position: relative;
   z-index: 0;
   -webkit-padding-start: var(--neon-stroke-width);
   padding-inline-start: var(--neon-stroke-width);
@@ -417,20 +397,31 @@
 }
 
 /* Friends tab - Usernames styling without Nitro */
-[aria-label="Friends"] .info_f4bc97 {
+[aria-label="Friends"] {
   .username__0a06e {
-    color: transparent;
     background: var(--friends-list-name-color);
     background-size: var(--bg-size);
     background-clip: text;
     -webkit-background-clip: text;
+    color: transparent;
     animation: var(--dm-list-name-animation);
   }
 
-  /* Discriminator behind name in friend list */
-  .discriminator__0a06e {
+  .text__0a06e, .info__0a06e, .username__0a06e {
+    overflow: var(--name-overflow); /* Fix name overflow */
+  }
+
+  .peopleListItem_cc6179:hover {
+    padding: 0 10px; /* Fix name & subtext being cut off by top & bottom */
+  }
+  
+  .discriminator__0a06e { /* Discriminator behind name in friend list */
     visibility: var(--discriminator-visibility);
-    color: var(--discriminator-color);
+    color: var(--discriminator-color-default);
+  }
+
+  .withDisplayNameStyles_f4bc97 .discriminator__0a06e {
+    color: var(--discriminator-color-nitro); /* Discriminator Nitro style */
   }
 }
 
