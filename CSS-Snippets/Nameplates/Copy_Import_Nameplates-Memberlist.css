@@ -1,0 +1,14 @@
+/*
+ * Import file for the Nameplates-Memberlist.css
+ *
+ * Copy the import url and the :root {} section and place it in the Quick CSS Editor or in your Theme.
+*/
+
+/* Import Nameplates CSS */
+@import url(https://github.com/LoveAxolotl/Discord/raw/refs/heads/main/CSS-Snippets/Nameplates/Nameplates-Memberlist.css);
+
+/* Background opacity variables */
+:root {
+  --opacity-left: .2; /* Default: 0.08 */
+  --opacity-right: .5; /* Default: 0.2 */
+}

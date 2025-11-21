@@ -387,3 +387,8 @@ Poster: nameplates/cherry_blossoms/static.png
 Style: background: linear-gradient(90deg, rgba(115, 11, 200, 0.1) 0%, rgba(115, 11, 200, 0.4) 100%);
 Video: nameplates/cityscape/asset.webm
 Poster: nameplates/cityscape/static.png
+
+75 - A friendly ghost floats up through an ornate purple frame with swirling mist effects.
+Style: background: linear-gradient(90deg, rgba(220, 62, 151, 0.1) 0%, rgba(220, 62, 151, 0.4) 100%);
+Video: trick_or_treat/im_watching_yooooou_treat/asset.webm
+Poster: trick_or_treat/im_watching_yooooou_treat/static.png
