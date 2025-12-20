@@ -56,7 +56,8 @@
 
 /* Dm section */
 [aria-label=" (channel)"] {
-  [data-text="Love_Axolotl"].username_c19a55:before {
+  
+  [data-text="Love_Axolotl"]:before {
     background: var(--background);
     background-clip: text;
     -webkit-background-clip: text;
@@ -68,7 +69,7 @@
     animation: var(--name) var(--duration) var(--timing) var(--delay) var(--count) forwards;
   }
 
-  [data-text="Love_Axolotl"].username_c19a55 {
+  [data-text="Love_Axolotl"] {
     paint-order: stroke fill;
     -webkit-text-stroke: var(--stroke-width) var(--stroke-color);
     color: var(--stroke-color);
