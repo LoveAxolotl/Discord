@@ -11,4 +11,5 @@
 :root {
   --opacity-left: .2; /* Default: 0.08 */
   --opacity-right: .5; /* Default: 0.2 */
+  --nameplate-img-opacity-memberlist: .7; /* Default: .6 */
 }
