@@ -4,16 +4,20 @@
  *
  * @author Love_Axolotl
  * @authorId 751063943065370644
- *
- * @version 0.0.3
- * @source https://github.com/LoveAxolotl/Discord/tree/main/CSS-Snippets/Nameplates/Nameplates-Memberlist.css
- *
+ * @version 0.0.4
  * @website https://github.com/LoveAxolotl/Discord
+ *
+ * @import url(https://github.com/LoveAxolotl/Discord/raw/refs/heads/main/CSS-Snippets/Nameplates/Nameplates-Memberlist.css);
  *
  * Some backgroundstyles can have different posters/src's (11 styles for 74 Nameplates).
 */
 
-/* Remove mask-image from Nameplates in memberlist */
+:root {
+  --opacity-left: .2; /* Default: 0.08 */
+  --opacity-right: .5; /* Default: 0.2 */
+  --nameplate-img-opacity: .7; /* Default: .6 */
+}
+
 .videoContainer_df39b2 {
   mask-image: none !important;
 }
@@ -89,6 +93,6 @@
 
     >img {
         mask-image: none !important;
-        opacity: var(--nameplate-img-opacity-memberlist) !important;
+        opacity: var(--nameplate-img-opacity) !important;
     }
 }
